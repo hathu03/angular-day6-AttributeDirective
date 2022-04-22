@@ -1,0 +1,12 @@
+<hello name="{{ name }}"></hello>
+
+
+<p [style.--text-color] ="isDanger ? 'blue' : 'red'" [style.color] = "'var(--text-color)'" [style.backgroundColor] = "'yellow'" [style.fontSize.px] = 20>
+  Start editing to see some magic happen :)
+</p>
+
+
+
+<button (click)="isDanger = !isDanger">Toggle Danger</button>
+<button (click)="isWarning = !isWarning">Toggle Warning</button>
+<div [class]="classes"></div>
